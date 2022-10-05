@@ -1,0 +1,11 @@
+.navbar-toggler-icon {
+    background-image: url("../img/logoboton.jpg") ;
+}
+
+.navbar-brand img{
+    width: 50%;
+}
+
+.img-regla {
+    overflow: hidden;
+}
