@@ -37,7 +37,7 @@ header {
 }
 
 .nav-link {
-    background-color: rgba(254, 255, 255, 0.386);
+    background-color: rgba(250, 255, 255, 0.862);
     color: black;
 }
 
@@ -74,6 +74,9 @@ h2  {
 
     .contenedor {
         padding-bottom: 15px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
     .presentacion {
@@ -109,6 +112,7 @@ h2  {
     .integrante {
         background-color: #ADA996;
         margin: 15px;
+        max-width: 600px;
         border-radius: 100px;
         align-items: center;
         
@@ -123,5 +127,21 @@ h2  {
        
 
         object-fit: cover;
+    }
 
+    .integrante h4 {
+        color: white;
+        font-weight: 700;
+        margin: 0 3px;
+    }
+
+    .integrante p {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .integrante2 {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
     }
