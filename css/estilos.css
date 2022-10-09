@@ -21,9 +21,14 @@ header {
 
     animation-name: botoninicio;
     animation-duration: 1s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 2;
     animation-timing-function: ease-in-out;
+}
 
+.navbar-brand img:hover {
+    border: 2px solid rgb(39, 1, 1);
+    transform: scale(1.3);
+    box-shadow: 0px 0px 15px 15px #8f7e73;
 }
 
 .navbar-toggler {
@@ -72,6 +77,8 @@ h2  {
     border: 1px solid rgb(179, 152, 79);
     width: 50%;
     margin: 15px;
+    box-shadow: 2px -2px 1px 1px #ff000052;
+
 }
 
 /* estilo Page Index */
@@ -117,11 +124,18 @@ h2  {
 
     .presentacion-contenido button {
         margin-bottom: 20px;
+        box-shadow: 3px -3px 5px 5px #7282e2ab;
+
+
+        animation-name: botonescribinos;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
     }
 
     .presentacion-integrantes {
         display: flex;
         flex-direction: column;
+        
     }
 
     .integrante {
@@ -130,6 +144,7 @@ h2  {
         max-width: 600px;
         border-radius: 100px;
         align-items: center;
+        box-shadow: 3px -3px 5px 5px #ada9967a;
         
         display: flex;
     }
@@ -217,6 +232,22 @@ h2  {
         
     }
 
+        /* media Queries */
+
+        @media (min-width: 1024px) {
+            .nav-link {
+                margin: 0 50px;
+            }
+            .navbar {
+                background-color: #d7c2b77a;
+            }
+
+            #navbarNav {
+                justify-content: center;
+            }
+        }
+
+
 /* Estilo Page Proyectos */
 
     main {
@@ -226,6 +257,10 @@ h2  {
         
     }
 
+    .proyecto {
+        width: 80%;
+    }
+
     .proyecto-img {
         display: grid;
         grid-template-areas: 
@@ -233,7 +268,7 @@ h2  {
         "proyecto1 proyecto1 proyecto3"
         "proyecto5 proyecto6 proyecto4" ;
         
-        align-items: center;
+        align-items: stretch;
         justify-items: center;
         border: 2px rgb(112, 96, 22);
         border-style: double;
@@ -242,7 +277,8 @@ h2  {
     }
 
     .proyecto img {
-        width: 80px;
+        width: 100%;
+        display: block;
     }
 
     .proyecto h3{
@@ -278,6 +314,9 @@ h2  {
         grid-area: proyecto6;
     }
 
+    .proyecto:hover {
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+    }
 /* Estilo Page Contactenos */
 
     /* Formulario de contacto */
@@ -316,12 +355,38 @@ h2  {
         margin: 0 15px;
     }
 
+        /* media Queries */
+
+        @media (min-width: 1024px) {
+            .mapa iframe {
+                width: 600px;
+                height: 600px;
+            }
+            .main-contactenos{
+                flex-direction: row;
+            }
+        }
+
+
 /* Estilo Page Cursos */
 
 
     #cursos {
         width: 100%;
     }
+
+        /* media Queries */
+
+        @media (min-width: 1024px) {
+            #cursos {
+                width: 80%;
+                margin: auto;
+                display: block;
+                opacity: 0.9;
+                border-radius: 20%;
+            }
+        }
+
 
 /* Estilo Page Servicios */
 
@@ -379,6 +444,12 @@ h2  {
         100% {
             transform: translatex(0px);
         }
-
-
     }
+
+    @keyframes botonescribinos {
+        50% {
+            scale: 1.05;
+        }
+    }
+
+
