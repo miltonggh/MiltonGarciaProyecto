@@ -68,7 +68,7 @@ h2  {
     margin: 15px;
 }
 
-/* estilo Index */
+/* estilo Page Index */
 
     /* primera sección */
 
@@ -208,62 +208,94 @@ h2  {
         
     }
 
-/* Estilo Proyectos */
+/* Estilo Page Proyectos */
 
-#main-proyecto {
-    background-image: url(../img/fondo.jpg);
-    background-repeat: repeat;
-    background-size: contain
+    #main-proyecto {
+        background-image: url(../img/fondo.jpg);
+        background-repeat: repeat;
+        background-size: contain
+        
+    }
+
+    .proyecto-img {
+        display: grid;
+        grid-template-areas: 
+        "proyecto1 proyecto1 proyecto2"
+        "proyecto1 proyecto1 proyecto3"
+        "proyecto5 proyecto6 proyecto4" ;
+        
+        align-items: center;
+        justify-items: center;
+        border: 2px rgb(112, 96, 22);
+        border-style: double;
+        background-color: #eaeaea7e;
+
+    }
+
+    .proyecto img {
+        width: 80px;
+    }
+
+    .proyecto h3{
+        background-color: hsla(0, 0%, 18%, 0.464);
+        text-align: center;
+        margin: 20px;
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.87);
+        border: double 5px rgb(251, 251, 251);
+    }
+
+    .proyecto1 {
+        grid-area: proyecto1;
+    }
+
+    .proyecto2 {
+        grid-area: proyecto2;
+    }
+
+    .proyecto3 {
+        grid-area: proyecto3;
+    }
+
+    .proyecto4 {
+        grid-area: proyecto4;
+    }
+
+    .proyecto5 {
+        grid-area: proyecto5;
+    }
+
+    .proyecto6 {
+        grid-area: proyecto6;
+    }
+
+/* Estilo Page Contactenos */
+
+    /* Formulario de contacto */
+   
+    .contactenos{
+        margin: 10%;
+        background-color: #2e2c2c;
+    }
     
-}
+    .contactenos h4 {
+        color: white;
+        margin: 5px;
+        font-weight: 800;
+    }
 
-.proyecto-img {
-    display: grid;
-    grid-template-areas: 
-    "proyecto1 proyecto1 proyecto2"
-    "proyecto1 proyecto1 proyecto3"
-    "proyecto5 proyecto6 proyecto4" ;
-    
-    align-items: center;
-    justify-items: center;
-    border: 2px rgb(112, 96, 22);
-    border-style: double;
+    .contactenos-formulario {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
 
-}
+    .item-form {
+        color: azure;
+        text-align: center;
+        margin-top: 15px;
+    }
 
-.proyecto img {
-    width: 80px;
-}
-
-.proyecto h3{
-    background-color: hsla(0, 0%, 18%, 0.464);
-    text-align: center;
-    margin: 20px;
-    font-size: 40px;
-    color: rgba(255, 255, 255, 0.87);
-    border: double 5px rgb(251, 251, 251);
-}
-
-.proyecto1 {
-    grid-area: proyecto1;
-}
-
-.proyecto2 {
-    grid-area: proyecto2;
-}
-
-.proyecto3 {
-    grid-area: proyecto3;
-}
-
-.proyecto4 {
-    grid-area: proyecto4;
-}
-
-.proyecto5 {
-    grid-area: proyecto5;
-}
-
-.proyecto6 {
-    grid-area: proyecto6;
-}
+    .contactenos-formulario input{
+        margin: 0 15px;
+    }
