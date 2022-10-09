@@ -332,6 +332,7 @@ h2  {
 
     .servicios-items ul {
         text-align: center;
+        padding-right: 32px;
     }
 
     .servicios-items ul li h3 {
