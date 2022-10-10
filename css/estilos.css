@@ -258,7 +258,7 @@ h2  {
     }
 
     .proyecto {
-        width: 80%;
+        width: 70%;
     }
 
     .proyecto-img {
@@ -276,12 +276,12 @@ h2  {
 
     }
 
-    .proyecto img {
+    .proyectom img {
         width: 100%;
         display: block;
     }
 
-    .proyecto h3{
+    .proyectom h3{
         background-color: hsla(0, 0%, 18%, 0.464);
         text-align: center;
         margin: 20px;
@@ -317,6 +317,15 @@ h2  {
     .proyecto:hover {
         -webkit-transform:scale(1.3);transform:scale(1.3);
     }
+
+        /* media Queries */
+
+        @media (min-width: 1024px) {
+            .proyecto {
+                width: 40%;
+            }
+        }
+
 /* Estilo Page Contactenos */
 
     /* Formulario de contacto */
