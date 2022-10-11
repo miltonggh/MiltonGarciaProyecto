@@ -402,6 +402,9 @@ h2  {
     .servicios{
     margin: 10%;
     background-color: rgba(255, 255, 255, 0.541);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+
     }
 
     .servicios-items ul {
